@@ -57,12 +57,22 @@
     section.active {
       display: block;
     }
-    .box {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      padding: 2rem;
-    }
+  .box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  .box:hover {
+    cursor: pointer; 
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .box:active {
+    transform: scale(1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
     img {
       max-width: 100%;
       border-radius: 8px;
@@ -92,6 +102,13 @@
       border-radius: 50%;
       margin-bottom: 0.5rem;
     }
+    .galeria-item img {
+  transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.1);
+}
   </style>
 </head>
 <body>
@@ -116,11 +133,11 @@
       <div class="team-grid">
         <div class="team-member">
           <img src="https://www.codigokid.com.br/assets/img/portfolio/thumbs/img-550x350-5.jpg" alt="Ana">
-          <p><strong>Ana</strong><br>Idade: 14 anos<br>Função: Programadora<br>Hobbies: Jogos, leitura e lógica<br>Destaque: Criação dos códigos dos sensores e movimentações do robô.</p>
+          <p><strong>Ana</strong><br>Idade: 7 anos<br>Função: Programadora<br></p>
         </div>
         <div class="team-member">
           <img src="https://thumbs.dreamstime.com/b/o-rapaz-pequeno-na-escola-da-rob%C3%B3tica-faz-rob%C3%B4-125297038.jpg" alt="Carlos">
-          <p><strong>Carlos</strong><br>Idade: 15 anos<br>Função: Engenheiro de Robôs<br>Hobbies: Montar maquetes e robôs LEGO<br>Destaque: Responsável pela estrutura física e montagem mecânica do robô.</p>
+          <p><strong>Carlos</strong><br>Idade: 8 anos<br>Função: Engenheiro de Robôs<br</p>
         </div>
         <div class="team-member">
           <img src="https://exponencialcursossorocaba.com.br/wp-content/uploads/2024/06/bg_roboticaKIDS_v2.jpg" alt="João">
@@ -147,7 +164,13 @@
     </div><br>
     <div class="box">
       <h2>História do grupo</h2>
-      <p>Nos formamos em 2024, na escola. Enquanto desenvolvíamos projetos menores, percebemos que todos gostavam muito do que estavam fazendo, e também que conseguíamos trabalhar muito bem em equipe, e começamos a pensar em usar nossas habilidades para atingir lugares maiores, e assim, decidimos que queríamos competir.</p> 
+      <p>Nos formamos em 2025, na escola. Enquanto desenvolvíamos projetos menores de robótica, percebemos que todos gostavam muito do que estavam fazendo. Cada montagem, cada programação, era feita com empolgação — e o mais legal era que conseguíamos trabalhar muito bem em equipe!
+
+Foi aí que começou a surgir uma ideia: e se usássemos tudo isso que estamos aprendendo para ir mais longe? Percebemos que juntos, tínhamos força, criatividade e muita vontade de crescer. Então decidimos que queríamos competir.
+
+E assim nasceu o nosso grupo de robótica LEGO — com coragem, amizade e muitos sonhos pela frente!
+
+</p>
     </div><br>
     <div class="box">
       <h2>Sede do grupo</h2>
@@ -161,17 +184,17 @@
       <h2>Projetos</h2>
       <div class="galeria-item">
     <div style="display: flex; align-items: center;">
-    <img src="https://i.ytimg.com/vi/17v9ZQ8SjLg/maxresdefault.jpg" alt="Descrição da imagem" style="width: 400px; height: auto; margin-right: 60px;">
-    <p>Robô dinossauro! <br>
-          Este projeto em forma de dinossauro explora movimentos mecânicos com sensores simples. <br>
-          O robô é programado para identificar obstáculos e reagir em tempo real. <br>
+    <img src="https://cdn.awsli.com.br/2240/2240977/produto/2163100623e9965681f.jpg" style="width: 400px; height: auto; margin-right: 60px;">
+    <p>Robô submarino! <br>
+          Este projeto em forma de submarino explora ooceano. <br>
+          O robô é programado para identificar lixo e limpando ele do oceano. <br>
       Um ótimo exemplo de automação básica em ação!</p>
   </div>
 <div style="display: flex; align-items: center; justify-content: flex-end;">
   <p style="margin-right: 60px;">
    Robô dançarino em ação! <br>
           Ele sincroniza movimentos com o ritmo da música. <br>
-          Uma mistura de engenharia e diversão.     
+          Uma mistura de engenharia e diversão.    
   </p>
   <img
     src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2023/06/image-14.webp?w=721&ssl=1"
@@ -188,17 +211,14 @@
   <p style="margin-right: 60px;">
     Este é o Robô Pulga! <br>
           Pequeno, ágil e veloz. <br>
-          Projetado para corridas e desafios de labirinto.     
+          Projetado para corridas e desafios de labirinto.    
   </p>
   <img
     src="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltbd3c4a0796fee6f0/60ee9b9f6a54304c405909ba/student-06.png?locale=pt-br&auto=webp&format=jpeg&width=800&quality=90&fit=bounds"
     alt="imagem carregando"
     style="width: 300px; height: auto;">
 </div>
-        
-        
-        
-        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -214,8 +234,8 @@
     <p>
       A FLL valoriza o <strong>trabalho em equipe</strong> 👥, o <strong>respeito</strong> 🙌 e a <strong>cooperação</strong> mesmo durante a competição — é o famoso “<em>coopertition</em>” 🤝.
     </p>
-    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/cecfo.jpg" alt="Mesa de desafios FLL" style="width: 300; height: 300;">
-    <p>Nosso grupo está se preparando com tudo para competir na FLL! 💪 Estamos animados para mostrar nossas ideias, aprender com outras equipes e, claro, nos divertir muito durante o processo! 🚀🏆</p> 
+    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/cecfo.jpg" alt="Mesa de desafios FLL" style=width="300" height="300">
+    <p>Nosso grupo está se preparando com tudo para competir na FLL! 💪 Estamos animados para mostrar nossas ideias, aprender com outras equipes e, claro, nos divertir muito durante o processo! 🚀🏆</p>
     </div>
   </section>
 
@@ -229,7 +249,7 @@
       sections.forEach(section => section.classList.remove('active'));
       const navLinks = document.querySelectorAll('nav a');
       navLinks.forEach(link => link.classList.remove('active'));
-      
+     
       document.getElementById(tabId).classList.add('active');
       document.querySelector(`nav a[onclick="showTab('${tabId}')"]`).classList.add('active');
     }
